@@ -1,10 +1,13 @@
 require 'pry'
 
-def century_from_year(year)
-  if year <= 1900 && year >= 1999
-    return 20
-  else
-    year < 1800 && year >= 1899
-    return 19
+  def century_from_year(year)
+    case
+    when year >= 1700 || year <= 1799
+      return 17
+    when year >= 1800 || year <= 1899
+      return 18
+    when year >= 1900 || year <= 1999
+      return 19
+    else "There's an error"
+    end
   end
-end
