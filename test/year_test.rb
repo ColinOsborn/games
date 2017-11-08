@@ -1,4 +1,4 @@
-require_relative 'year.rb'
+require './lib/year.rb'
 require 'minitest/autorun'
 require 'minitest/pride'
 require 'pry'
